@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+//    buildToolsVersion '23.0.0 rc2'
+//    defaultConfig {
+//        applicationId "com.computer.mazhihuapp"
+//        minSdkVersion 14
+//        targetSdkVersion 22
+//        versionCode 1
+//        versionName "1.0"
+//    }
+    defaultConfig {
+        applicationId "com.example.lq.myapplication"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+ task makeJar(type: Copy){
+
+
+ }
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.loopj.android:android-async-http:1.4.8'
+    compile files('libs/httpcore-4.0.1.jar')
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:support-v4:23.0.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    compile 'com.android.support:design:22.2.1'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile files('libs/volley.jar')
+    compile files('libs/loginsdk.jar')
+    compile files('libs/afinal-0.5.jar')
+    compile files('libs/guomob_banner_sdk.jar')
+    compile files('libs/guomob_screen_sdk.jar')
+}

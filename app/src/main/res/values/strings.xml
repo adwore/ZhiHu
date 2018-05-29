@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">知乎</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="file_path">multidownload</string>
+    <string name="image_data">imageData</string>
+</resources>

@@ -1,0 +1,21 @@
+本项目是一个高仿知乎android studio 版本的项目源码，实现了包括侧滑效果、夜间模式、上拉刷新、下拉刷新、缓冲处理、幻灯片效果等功能。属于一个半成品的demo，javaapk.com之前也介绍过很多和本项目类似的源码，可以在javaapk.com的“网站客户端”分类中免费下载。
+
+
+                ╔═══════════════╗
+                ║       安卓源码服务专家       ║
+  ╔══════╣───────────────╠══════╗
+  ║            ║    http://www.javaapk.com    ║            ║
+  ║            ╚═══════════════╝            ║
+　║                                                          ║
+　║JavaApk声明：                                             ║
+  ║   1) 程序如果跑不起来需要自调，javaapk做船但不帮您扬帆。 ║
+  ║   2) 免费例子大全http://www.javaapk.com/demo不定期更新。 ║
+  ║   3) 如有版权争议欢迎随时联系javaapk。                   ║
+  ║   4) 源码仅限学习交流，切勿移作他用。                    ║
+  ║   5) 转载请保留本源码说明，赠人玫瑰，手留余香。          ║
+　║                                                          ║
+  ║           JavaApk —— 安卓源码服务专家                  ║
+  ║           联系方式 :QQ18805870  javaapk@qq.com           ║
+  ║    ╔═══════════════════════╗    ║
+  ╚══╣    安卓源码专业站 http://www.JavaApk.com     ╠══╝
+        ╚═══════════════════════╝

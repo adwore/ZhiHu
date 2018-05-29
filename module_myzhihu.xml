@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_myzhihu" default="compile.module.myzhihu">
+  <dirname property="module.myzhihu.basedir" file="${ant.file.module_myzhihu}"/>
+  
+  <property name="module.jdk.home.myzhihu" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.myzhihu" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.myzhihu" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.myzhihu" value="-encoding UTF-8 -source 1.7 ${compiler.args}"/>
+  
+  <property name="myzhihu.output.dir" value="${module.myzhihu.basedir}/build/classes/production/MyZhihu"/>
+  <property name="myzhihu.testoutput.dir" value="${module.myzhihu.basedir}/build/classes/test/MyZhihu"/>
+  
+  <path id="myzhihu.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="myzhihu.module.production.classpath">
+    <path refid="${module.jdk.classpath.myzhihu}"/>
+  </path>
+  
+  <path id="myzhihu.runtime.production.module.classpath">
+    <pathelement location="${myzhihu.output.dir}"/>
+  </path>
+  
+  <path id="myzhihu.module.classpath">
+    <path refid="${module.jdk.classpath.myzhihu}"/>
+    <pathelement location="${myzhihu.output.dir}"/>
+  </path>
+  
+  <path id="myzhihu.runtime.module.classpath">
+    <pathelement location="${myzhihu.testoutput.dir}"/>
+    <pathelement location="${myzhihu.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.myzhihu">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.myzhihu">
+    <patternset refid="excluded.from.module.myzhihu"/>
+  </patternset>
+  
+  
+  <target name="compile.module.myzhihu" depends="compile.module.myzhihu.production,compile.module.myzhihu.tests" description="Compile module MyZhihu"/>
+  
+  <target name="compile.module.myzhihu.production" depends="register.custom.compilers" description="Compile module MyZhihu; production classes"/>
+  
+  <target name="compile.module.myzhihu.tests" depends="register.custom.compilers,compile.module.myzhihu.production" description="compile module MyZhihu; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.myzhihu" description="cleanup module">
+    <delete dir="${myzhihu.output.dir}"/>
+    <delete dir="${myzhihu.testoutput.dir}"/>
+  </target>
+</project>

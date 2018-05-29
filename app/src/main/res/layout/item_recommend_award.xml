@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/task_item_bg">
+
+        <FrameLayout
+            android:id="@+id/ll_task_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/imageview_task_app_cion"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="fitXY"/>
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_task_icon_border"
+                android:scaleType="fitXY"/>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_task_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp" >
+
+            <Button
+                android:id="@+id/button_task_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/task_item_btn_selector"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/ll_task_02"
+            android:layout_toRightOf="@+id/ll_task_01"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/textview_task_app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="#3d7af1"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textview_task_app_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="sdadads"
+                    android:textColor="#8ba4db"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/textview_task_app_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#8ba4db"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_task_03"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@id/ll_task_01"
+            android:layout_marginBottom="3dip"
+            android:layout_marginTop="3dip"
+            android:background="#b4c8ef"
+            android:orientation="horizontal" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_task_03"
+            android:layout_margin="5dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:gravity="center_vertical"
+                android:text="收益:"
+                android:textColor="#8ba4db"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/linearlayout_task"
+                android:layout_width="0dip"
+                android:layout_height="28dip"
+                android:layout_weight="3.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textview_task_app_love"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.8"
+                android:gravity="center_vertical"
+                android:text="已有0人喜欢"
+                android:textColor="#8ba4db"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
